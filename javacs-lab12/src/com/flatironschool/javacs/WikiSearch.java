@@ -162,18 +162,8 @@ public class WikiSearch {
 	 * @return List of entries with URL and relevance.
 	 */
 	public List<Entry<String, Integer>> sort() {
-		// have a map of strings (urls) to ints of their relevance 
-		// sort them by the relevance (how to tell sort ot sort by the value?)
-
-		//is three like a mpa.get entries methond
-		// is an entry comparable? do i have to definte an entire? 
-		//get all these Entry objects then sort them by value somehow? 
 	 	Set<Map.Entry<String,Integer>> set = map.entrySet();
 	 	List<Entry<String, Integer>> list = new LinkedList<Entry<String, Integer>>(set);
-	
-	 	
-	 	//define coparable for those entries 
-	 	//sort by the value. this is a really simple problem 
 		Collections.sort(list, comparator);
 		return list;
 	}
